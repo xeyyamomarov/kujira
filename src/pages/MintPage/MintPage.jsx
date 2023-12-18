@@ -14,6 +14,8 @@ const MintPage = () => {
 
   const series = [100];
 
+  // 
+
   return (
     <div className="mint-page">
       <div className="container">
