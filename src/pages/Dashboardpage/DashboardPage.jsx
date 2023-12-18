@@ -52,6 +52,7 @@ const DashboardPage = () => {
     { id: 3, header: "USK Price", price: "0.9997", currency: "USD" },
     { id: 4, header: "Inflation", price: "0.00", currency: "%" },
   ];
+  // 
 
   return (
     <div className="dashboard-page">
