@@ -19,6 +19,9 @@
   display: flex;
   align-items: center;
 }
+.sidebar li a svg{
+  margin-right: 5px;
+}
 .sidebar li a:hover {
   color: white;
   text-decoration: none;
@@ -35,10 +38,12 @@
 .sidebar-mobile {
   display: none;
 }
-.sidebar-mobile li a.active {
-  color: white;
+.sidebar-mobile li a.active  {
   background: rgba(96, 125, 139, 0.25);
   border-radius: 50%;
+}
+.sidebar-mobile li a.active svg{
+  fill: white;
 }
 
 .sidebar-mobile li a {
@@ -60,5 +65,10 @@
 
   .sidebar-mobile {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar-mobile li a svg{
+    width: 15px;
+    height: 15px;
   }
 }

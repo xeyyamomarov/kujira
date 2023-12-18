@@ -99,7 +99,7 @@ const DashboardPage = () => {
 
             <div className="dashboard-box ">
               <div className="box-container">
-                <div className="box-content">
+                <div className="box-content block">
                   {thirdCard.map((card, i) => (
                     <div key={card.id} className={`box-data box-${i + 1}`}>
                       <h3>{card.header}</h3>

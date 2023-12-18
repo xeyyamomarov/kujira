@@ -5,7 +5,7 @@
   color: white;
   font-size: 24px;
   font-weight: 400;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .dashboard-page .dashboard-content .dashboard-cards {
   display: grid;
@@ -14,8 +14,7 @@
 }
 
 .dashboard-page .dashboard-content .dashboard-cards .dashboard-box {
-  border: 1px solid red;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   background: rgba(22, 23, 33, 0.75);
   border-radius: 1rem;
   box-shadow: 2px 2px 10px #16172159;
@@ -29,6 +28,11 @@
   .dashboard-box
   .box-container {
   padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 .dashboard-page
@@ -48,7 +52,7 @@
   .box-container
   .box-content
   .box-data {
-  /* padding: 20px; */
+  padding: 20px;
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -64,9 +68,10 @@
   .box-content
   .box-data
   h3 {
-  font-size: 14px;
+  font-size: 12px;
   color: #607d8b;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .dashboard-page
@@ -77,7 +82,8 @@
   .box-content
   .box-data
   span {
-  font-size: 24px;
+  font-size: 20px;
+
 }
 
 .dashboard-page
@@ -131,6 +137,18 @@
   .box-currency {
   display: flex;
   flex-direction: column;
+}
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content.block
+  .box-data.box-4
+  .box-currency {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .dashboard-page
@@ -224,5 +242,11 @@
 @media screen and (max-width:980px) {
   .dashboard-page .dashboard-content .dashboard-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width:700px) {
+  .dashboard-page{
+    width: 100%;
   }
 }

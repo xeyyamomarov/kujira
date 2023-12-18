@@ -1,5 +1,6 @@
-/* .header {
-} */
+.header {
+  padding: 20px 0;
+}
 
 .header .header-content {
   display: flex;

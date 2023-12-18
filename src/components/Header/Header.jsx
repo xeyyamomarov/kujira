@@ -1,7 +1,7 @@
 import React from 'react'
 import "./header.css"
-import Logo from "../../assets/kujira-blue@2x.07824ad4.png";
-import MobileLogo from "../../assets/kujira-blue-mobile.7a6f5460.png"
+import Logo from "../../assets/header/kujira-blue@2x.07824ad4.png";
+import MobileLogo from "../../assets/header/kujira-blue-mobile.7a6f5460.png"
 
 const Header = () => {
   return (

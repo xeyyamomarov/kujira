@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
-import  TwitterLogo from "../../assets/twitter-3-svgrepo-com.svg"
-import DiscordLogo from "../../assets/discord-svgrepo-com.svg"
+import TwitterLogo from "../../assets/footer/twitter-3-svgrepo-com.svg";
+import DiscordLogo from "../../assets/footer/discord-svgrepo-com.svg";
 
 const Footer = () => {
   const list = [
@@ -27,11 +27,11 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-icons">
-                  <img src={TwitterLogo} alt="logo" />
-                  <img src={DiscordLogo} alt="logo" />
-                  <img src={TwitterLogo} alt="logo" />
-                  <img src={TwitterLogo} alt="logo" />
-                  <img src={TwitterLogo} alt="logo" />
+              <img src={TwitterLogo} alt="logo" />
+              <img src={DiscordLogo} alt="logo" />
+              <img src={TwitterLogo} alt="logo" />
+              <img src={TwitterLogo} alt="logo" />
+              <img src={TwitterLogo} alt="logo" />
             </div>
           </div>
           {/* <div className="footer-bottom">

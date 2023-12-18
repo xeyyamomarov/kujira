@@ -1,7 +1,8 @@
 import "./sidebar.css";
 import { Link, useLocation } from "react-router-dom";
-import { ReactComponent as DashboardLogo } from "../../assets/dashboard-logo.svg";
-import { ReactComponent as WalletLogo } from "../../assets/wallet-alt-svgrepo-com.svg";
+import { ReactComponent as DashboardLogo } from "../../assets/sidebar/dashboard-logo.svg";
+import { ReactComponent as WalletLogo } from "../../assets/sidebar/wallet-alt-svgrepo-com.svg";
+import {ReactComponent as SwapLogo} from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg"
 
 const Sidebar = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const Sidebar = () => {
             to="/swap"
             className={location.pathname === "/swap" ? "active" : ""}
           >
+            <SwapLogo/>
             Swap
           </Link>
         </li>
@@ -92,7 +94,7 @@ const Sidebar = () => {
             to="/swap"
             className={location.pathname === "/swap" ? "active" : ""}
           >
-            <DashboardLogo />
+            <SwapLogo />
           </Link>
         </li>
         <li>

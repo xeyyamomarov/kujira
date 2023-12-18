@@ -1,9 +1,9 @@
 import React from "react";
 import "./wallet.css";
-import SonarImg from "../../assets/sonar.svg"
-import LeapImg from "../../assets/leap.png"
-import KelprImg from "../../assets/63edd5d1a40b9a48841ac1d2_Keplr Logo.svg"
-import XDEFIImg from "../../assets/site-logo.svg"
+import SonarImg from "../../assets/wallet/sonar.svg"
+import LeapImg from "../../assets/wallet/leap.png"
+import KelprImg from "../../assets/wallet/63edd5d1a40b9a48841ac1d2_Keplr Logo.svg"
+import XDEFIImg from "../../assets/wallet/site-logo.svg"
 
 const WalletPage = () => {
 
