@@ -19,6 +19,7 @@
   color: white;
   display: flex;
   align-items: center;
+  margin: 10px 0;
   /* justify-content: space-between; */
 }
 
@@ -143,6 +144,7 @@
   .left-content-price
   h6 {
   color: #607d8b;
+  font-size: 12px;
 }
 
 .mint-page
@@ -374,17 +376,100 @@
   font-size: 12px;
   color: #607d8b;
 }
-.open-btn{
+
+.mint-card-bottom .mint-card-top-left .left-content-price h6 {
+  font-size: 12px;
+}
+.open-btn {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-.open-btn button{
+.open-btn button {
   padding: 8px;
   color: #46d0d9;
   background-color: transparent;
   border: none;
   border: 1px solid #46d0d9;
   border-radius: 4px;
-  
+  cursor: pointer;
+
+}
+
+.mint-page .mint-content .mint-cards .mint-content-container .mint-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint-page .mint-content .mint-cards .mint-content-container .mint-chart h5 {
+  color: #607d8b;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mint-page
+  .mint-content
+  .mint-cards
+  .mint-content-container
+  .mint-chart
+  strong {
+  color: white;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .mint-page .mint-content .mint-cards .mint-content-container {
+    flex-direction: column;
+  }
+
+  .mint-page .mint-content .mint-cards .mint-content-container .mint-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mint-page {
+    width: 100%;
+  }
+  .mint-page
+    .mint-content
+    .mint-cards
+    .mint-content-container
+    .mint-card
+    .mint-card-container
+    .mint-card-top,
+  .mint-page
+    .mint-content
+    .mint-cards
+    .mint-content-container
+    .mint-card
+    .mint-card-container
+    .mint-card-bottom {
+    flex-direction: column;
+  }
+  .mint-page
+    .mint-content
+    .mint-cards
+    .mint-content-container
+    .mint-card
+    .mint-card-container
+    .mint-card-top
+    .mint-card-top-left {
+    width: 100%;
+  }
+  .mint-page
+    .mint-content
+    .mint-cards
+    .mint-content-container
+    .mint-card
+    .mint-card-container
+    .mint-card-top
+    .mint-card-top-right {
+    width: 100%;
+  }
+  .mint-card-bottom .mint-card-top-left {
+    width: 100%;
+  }
 }

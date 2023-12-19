@@ -2,10 +2,13 @@ import "./sidebar.css";
 import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as DashboardLogo } from "../../assets/sidebar/dashboard-logo.svg";
 import { ReactComponent as WalletLogo } from "../../assets/sidebar/wallet-alt-svgrepo-com.svg";
-import {ReactComponent as SwapLogo} from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg"
+import { ReactComponent as SwapLogo } from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg";
+import { ReactComponent as MintLogo } from "../../assets/sidebar/coin-svgrepo-com.svg";
 
 const Sidebar = () => {
   const location = useLocation();
+  // const [selectedManage, setSelectedManage] = useState(null);
+
   return (
     <>
       <ul className="sidebar">
@@ -29,7 +32,7 @@ const Sidebar = () => {
             to="/swap"
             className={location.pathname === "/swap" ? "active" : ""}
           >
-            <SwapLogo/>
+            <SwapLogo />
             Swap
           </Link>
         </li>
@@ -46,6 +49,7 @@ const Sidebar = () => {
             to="/mint"
             className={location.pathname === "/mint" ? "active" : ""}
           >
+            <MintLogo />
             Mint
           </Link>
         </li>
@@ -110,7 +114,7 @@ const Sidebar = () => {
             to="/mint"
             className={location.pathname === "/mint" ? "active" : ""}
           >
-            <DashboardLogo />
+            <MintLogo />
           </Link>
         </li>
         <li>

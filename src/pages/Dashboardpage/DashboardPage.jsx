@@ -3,7 +3,7 @@ import "./dashboard.css";
 import Chart from "react-apexcharts";
 
 
-const DashboardPage = () => {
+const Dashboardpage = () => {
   const firstCard = [
     { id: 1, header: "Token Price", price: "4.990", currency: "USD" },
     { id: 2, header: "Fully Diluted Value", price: "583.71M", currency: "" },
@@ -141,4 +141,4 @@ const DashboardPage = () => {
   );
 };
 
-export default DashboardPage;
+export default Dashboardpage;

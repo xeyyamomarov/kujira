@@ -5,12 +5,12 @@ import DiscordLogo from "../../assets/footer/discord-svgrepo-com.svg";
 
 const Footer = () => {
   const list = [
-    { id: 1, name: "Kujira" },
-    { id: 2, name: "Developer" },
-    { id: 3, name: "Docs" },
-    { id: 4, name: "Merch" },
-    { id: 5, name: "Apps" },
-    { id: 6, name: "Connect to Migration Network" },
+    { id: 1, name: "Kujira" ,link:"" },
+    { id: 2, name: "Developer",link:"/developer" },
+    { id: 3, name: "Docs",link:"" },
+    { id: 4, name: "Merch",link:"" },
+    { id: 5, name: "Apps",link:"" },
+    { id: 6, name: "Connect to Migration Network",link:"" },
   ];
   return (
     <div className="footer">
@@ -21,7 +21,7 @@ const Footer = () => {
               <ul>
                 {list.map((item) => (
                   <li key={item.id}>
-                    <a href="/">{item.name}</a>
+                    <a href={item.link}>{item.name}</a>
                   </li>
                 ))}
               </ul>
